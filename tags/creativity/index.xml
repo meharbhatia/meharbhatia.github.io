@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>creativity on Brihi Joshi</title>
+    <link>https://brihijoshi.github.io/tags/creativity/</link>
+    <description>Recent content in creativity on Brihi Joshi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Brihi Joshi</copyright>
+    <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://brihijoshi.github.io/tags/creativity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ILIAD Tools</title>
+      <link>https://brihijoshi.github.io/project/iliadtools/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://brihijoshi.github.io/project/iliadtools/</guid>
+      <description>A toolkit for controlling sound parameters in real-time using&amp;hellip;images!</description>
+    </item>
+    
+  </channel>
+</rss>

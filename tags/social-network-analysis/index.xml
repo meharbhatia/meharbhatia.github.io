@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Social Network Analysis on Brihi Joshi</title>
+    <link>https://brihijoshi.github.io/tags/social-network-analysis/</link>
+    <description>Recent content in Social Network Analysis on Brihi Joshi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Brihi Joshi</copyright>
+    <lastBuildDate>Sun, 01 Jul 2018 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://brihijoshi.github.io/tags/social-network-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Retweet Us, We Will Retweet You: Spotting Collusive Retweeters Involved in Blackmarket Services</title>
+      <link>https://brihijoshi.github.io/publication/asonam-2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://brihijoshi.github.io/publication/asonam-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generating Clues for Gender based Occupation De-biasing in Text</title>
+      <link>https://brihijoshi.github.io/publication/arxiv-ibm-2018/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://brihijoshi.github.io/publication/arxiv-ibm-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

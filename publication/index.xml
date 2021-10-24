@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on Brihi Joshi</title>
+    <link>https://brihijoshi.github.io/publication/</link>
+    <description>Recent content in Publications on Brihi Joshi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Brihi Joshi</copyright>
+    <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://brihijoshi.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CoReRank: Ranking to Detect Users Involved in Blackmarket-based Collusive Retweeting Activities</title>
+      <link>https://brihijoshi.github.io/publication/wsdm-2019/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0530</pubDate>
+      
+      <guid>https://brihijoshi.github.io/publication/wsdm-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Retweet Us, We Will Retweet You: Spotting Collusive Retweeters Involved in Blackmarket Services</title>
+      <link>https://brihijoshi.github.io/publication/asonam-2018/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://brihijoshi.github.io/publication/asonam-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generating Clues for Gender based Occupation De-biasing in Text</title>
+      <link>https://brihijoshi.github.io/publication/arxiv-ibm-2018/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0530</pubDate>
+      
+      <guid>https://brihijoshi.github.io/publication/arxiv-ibm-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
