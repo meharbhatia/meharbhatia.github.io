@@ -1,1178 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
 
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="PhD Student, McGill University and Mila">
+    <meta name="author" content="Mehar Bhatia">
+    <meta name="theme-color" content="#222222">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.3.0">
-  <meta name="generator" content="Hugo 0.55.4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nicons/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/nicons/logo.png">
 
-  <meta name="author" content="Mehar Bhatia">
-
-  <meta name="description" content=" PhD Student at McGill University & MILA">
-
-  <link rel="alternate" hreflang="en-us" href="https://meharbhatia.github.io/">
-
-  <meta name="theme-color" content="hsl(339, 90%, 68%)">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display:400,700|Fauna+One">
-    <link rel="stylesheet" href="/styles.css">
-  
-  <link rel="alternate" href="https://meharbhatia.github.io/index.xml" type="application/rss+xml" title="Mehar Bhatia">
-  <link rel="feed" href="https://meharbhatia.github.io/index.xml" type="application/rss+xml" title="Mehar Bhatia">
-  
-
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/logo.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/logo.png">
-
-  <link rel="canonical" href="https://meharbhatia.github.io/">
-
-  <meta property="twitter:card" content="summary">
-  
-  <meta property="twitter:site" content="@bhatia_mehar">
-  <meta property="twitter:creator" content="@bhatia_mehar">
-  
-  <meta property="og:site_name" content="Mehar Bhatia">
-  <meta property="og:url" content="https://meharbhatia.github.io/">
-  <meta property="og:title" content="Mehar Bhatia">
-  <meta property="og:description" content="PhD Student at McGill University & MILA"><meta property="og:image" content="https://meharbhatia.github.io/img/logo.png">
-  <meta property="og:locale" content="en-us">
-  
-  <meta property="og:updated_time" content="2019-08-16T00:00:00&#43;05:30">
-  
-
-  
-
-  
-
-  <title>Mehar Bhatia</title>
-
-</head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" class="dark">
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
-        
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
-  <div class="container">
-
-    
-      <a class="navbar-brand" href="/">Mehar Bhatia</a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
       
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-    
-    <div class="collapse navbar-collapse" id="navbar">
-
-      
-      
-      <ul class="navbar-nav ml-auto">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#about" data-target="#about">
-            
-            <span>Home</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#news" data-target="#news">
-            
-            <span>News</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/research/" data-target="research/">
-            
-            <span>Research</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#publications" data-target="#publications">
-            
-            <span>Publications</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#posts" data-target="#posts">
-            
-            <span>Blog</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#contact" data-target="#contact">
-            
-            <span>Contact</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-      
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li>
-        
-
-        
-
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
-        
-
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-
-
-<span id="homepage" style="display: none"></span>
-
-
-  
-
-
-
-
-
-  
-  
-  
-  <section id="about" class="home-section">
-    <div class="container">
-      
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      
-      <img class="portrait" src="/author/admin/MeharBhatia_Photo.jpeg" itemprop="image" alt="Avatar">
-      
-
-      <div class="portrait-title">
-        <h2 itemprop="name">Mehar Bhatia</h2>
-        <h3 itemprop="jobTitle">PhD Student at McGill University & MILA</h3>
-
-        
-      </div>
-
-      <link itemprop="url" href="">
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        <li>
-          <a itemprop="sameAs" href="/files/cv.pdf" >
-            <i class="ai ai-cv big-icon"></i>
-          </a>
-        </li>
-          
-        <li>
-          <a itemprop="sameAs" href="mailto:mehar.bhatia@mila.quebec" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-    
-        <li>
-          <a itemprop="sameAs" href="https://scholar.google.com/citations?hl=en&user=F1efoLgAAAAJ" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-        <li>
-          <a itemprop="sameAs" href="https://github.com/meharbhatia" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-        <li>
-          <a itemprop="sameAs" href="https://twitter.com/bhatia_mehar" target="_blank" rel="noopener">
-            <i class="fab fa-twitter big-icon"></i>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8" itemprop="description">
-
-    
-    <h1>About Me</h1>
-
-    <p>I am a PhD Student at McGill University, School of Computer Science and a Student Researcher at MILA Quebec AI Institute, advised by Professor Siva Reddy and Professor Vered Shwartz. </p>
-    <p> My research centers on <b>socio-technical alignment</b> in AI, aiming to develop language and multimodal models that are <b>safe, inclusive, and culturally sensitive</b>. I focus on incorporating diverse values and <b>pluralistic preferences</b>, addressing the limitations of existing alignment techniques that often overlook cultural nuances and <b>value pluralism</b>. To ensure these
-      models align with the needs of a global user base, my research also involves designing <b>evaluation frameworks </b> that assess
-      real-world impact, prioritize transparency, and promote robustness in alignment practices.</p>
-    <p>I earned my Masters degree in Computer Science from University of British Columbia, supervised by <a href="https://www.cs.ubc.ca/~vshwartz/" target="_blank">Prof. Vered Shwartz.</a> I worked on exploring the cultural competence of language and multimodal models.  </p>
-
-    <p> Prior to starting my graduate studies, I spent a year at <a href="https://neuralspace.ai" target="_blank">NeuralSpace </a> as an Applied Research Scientist, where I contributed to building AutoNLP solutions for 80+ languages.
-      I have also been a part of various academic labs, <a href="https://declare-lab.net/" target="_blank">DeCLaRe Lab</a> at SUTD, <a href="http://midas.iiitd.edu.in/" target="_blank">MIDAS Lab</a>, at IIIT Delhi, Language Technologies Lab and Software Engineering Lab at IIIT Hyderabad. In 2020, I graduated with a Bachelors in Computer Science and a Minor in Mathematics from <a href="https://snu.edu.in/home" target="_blank">Shiv Nadar University, India</a> and completed my bachelors thesis with MIDAS Lab, IIIT Delhi.</a></p>
-    
-    
-    <p>If you are reading this, I would love to talk to you! I am always looking for opportunities to collaborate. Also, my inbox is open if you have any questions about student life at UBC, McGill/MILA or Canada in general. Message me on Twitter or send me an email.</p>
-
-
-    <div class="row">
-
-      
-      <div class="col-md-5">
-        <h3>Research Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Natural Language Understanding</li>
-
-          <li>AI Alignment</li>
-
-          <li>AI & Cultures</li>
-          
-          <li>Multimodality</li>
-          
-          <li>Interpretability</li>
-          
-        </ul>
-      </div>
-      
-
-      
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">PhD in Computer Science, 2024-2028 (Expected) </p>
-              <p class="institution">McGill University & MILA</p>
+    <title>Mehar Bhatia</title>
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1> -->
+    <div class="container pt-5 allstuffp">
+        <div class="row pt-5 allstuff">
+            <div class="col-md-4 pt-5">
+                <div class="fixed-posi">
+                <p class="name">Mehar Bhatia</p>
+                <style> 
+                .profilepic {
+                    border-radius: 30%;
+                    width: 180px;
+                    height: 220px;
+                }
+                </style>
+                <img src="images/MeharBhatia_Photo.jpeg" class="profilepic pt-4 pb-4">
+                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/MeharBhatia_CV.pdf">curriculum vitae</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=F1efoLgAAAAJ">google scholar</a></div>
+                <div class=""><a class="menulink" target="_blank" href="mailto:meharmailbox@gmail.com">email address</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://x.com/bhatia_mehar">twitter</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://github.com/meharbhatia">github profile</a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/meharbhatia23/">linkedin</a></div>
+                
+                
+
+                <!-- <div class="pt-5">usercontext</div> -->
+                <!-- <div class="">travel history</div> -->
+                <!-- <div class="">this template</div> -->
+                </div>
             </div>
-          </li>
 
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Masters in Computer Science (Thesis Direction), 2022-2024 </p>
-              <p class="institution">University of British Columbia, Vancouver</p>
+            <div class="col-md-8 pt-5 about">
+
+              I am a second-year PhD Student at McGill University, School of Computer Science and Mila - Quebec AI Institute, advised by <a class="in-text"
+              href="https://sivareddy.in/" target="_blank">Siva Reddy</a> and <a class="in-text" href="https://www.cs.ubc.ca/~vshwartz/index.html" target="_blank">Vered Shwartz.</a> <br> <br>
+
+              My research is centered around <b>socio-technical alignment</b> of AI systems to represent <b>diverse human preferences</b> and <b>maintain diversity</b>. 
+              I investigate how language and multimodal models can continually learn from real-world human interaction, through methods for preference elicitation and alignment, adaptive optimization and personalized reasoning. <br> <br>
+
+              I earned my Masters degree in Computer Science from University of British Columbia, supervised by <a href="https://www.cs.ubc.ca/~vshwartz/" target="_blank">Vered Shwartz.</a> I worked on exploring the cultural competence of language and multimodal models. Prior to starting my graduate studies, I spent a year at <a href="https://neuralspace.ai" target="_blank">NeuralSpace </a> as an Applied Research Scientist.
+              I have also been a part of various academic labs, <a href="https://declare-lab.net/" target="_blank">DeCLaRe Lab</a> at SUTD, <a href="http://midas.iiitd.edu.in/" target="_blank">MIDAS Lab</a>, at IIIT Delhi, Language Technologies Lab and Software Engineering Lab at IIIT Hyderabad. In 2020, I graduated with a Bachelors in Computer Science and a Minor in Mathematics from <a href="https://snu.edu.in/home" target="_blank">Shiv Nadar University, India</a>.<br><br>
+    
+              If you are reading this, I would love to talk to you! I am always looking for opportunities to collaborate. My DMs are open if you have any questions about grad-life at MILA/McGill/UBC or Canada in general. Message me on X or send me an email.
+
+                 
+              <p class="header pt-5">Updates</p>
+                <div style="height:250px;overflow:auto;">
+                    <table>
+                        <col width="100px">
+                        <tr>
+                            <td><b>Nov 2025:</b></td>
+                            <td>Gave a talk on <a href="https://arxiv.org/abs/2510.26707">value drifts</a> at University of British Columbia.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Oct 2025:</b></td>
+                            <td>We released our paper, Value Drifts: Tracing Value Alignment During LLM Post-Training! Check out the <a href="https://arxiv.org/abs/2510.26707">paper</a> and <a href="https://x.com/bhatia_mehar/status/1985710208778211532">tweet</a>.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Oct 2025:</b></td>
+                            <td>I will be at COLM 2025 in Montreal.</td>
+                        </tr>
+                        <tr>
+                            <td><b>July 2025:</b></td>
+                            <td>Our paper CulturalFrames (in collab with Google DeepMind) was accepted to EMNLP'25! Check out the <a href="https://arxiv.org/abs/2510.26707">paper</a> and <a href="https://x.com/bhatia_mehar/status/1985710208778211532">tweet</a>.</td>
+                        </tr>
+                        <tr>
+                            <td><b>June 2025:</b></td>
+                            <td>I am at Nashville for CVPR 2025, co-organizing the VLMs-4-All Workshop.</td>
+                        </tr>
+                        <tr>
+                            <td><b>April 2025:</b></td>
+                            <td>I was awarded the prestigious <b>FRQNT Doctoral Training Research Scholarship!</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>April 2025:</b></td>
+                            <td>I will be at the Simons Institute at UC Berkeley for the Safety-Guaranteed LLMs Workshop.</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>April 2025:</b></td>
+                            <td>We released our Thoughtology paper! This was a huge and fun lab effort. Check out the <a href="https://arxiv.org/abs/2510.26707">paper</a> and <a href="https://x.com/bhatia_mehar/status/1985710208778211532">tweet</a>.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Mar 2025:</b></td>
+                            <td>I was awarded one of <b>Mila’s EDI Excellence scholarships</b> for the category - Women in AI, PhD level!</td>
+                        </tr>
+                        <tr>
+                            <td><b>Feb 2025:</b></td>
+                            <td>We released our position paper, Societal Alignment Frameworks Can Improve LLM Alignment. Check out the <a href="https://arxiv.org/abs/2510.26707">paper</a> and <a href="https://x.com/bhatia_mehar/status/1985710208778211532">tweet</a>.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Dec 2024:</b></td>
+                            <td>I was awarded the <b>Prof. Cho Diversity Scholarship at MILA! </b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Nov 2024:</b></td>
+                            <td>I will be at Miami for EMNLP'24, presenting our paper on evaluating multicultural understanding of VLMs.</b></td>
+                        </tr>
+                        <tr>
+                            <td><b>Sept 2024:</b></td>
+                            <td>I moved to Montreal! I am starting a PhD with Siva Reddy at McGill University and Mila! It's a dream come true!</td>
+                        </tr>
+                        <tr>
+                            <td><b>Aug 2024:</b></td>
+                            <td>I defended my Master's thesis and have officially graduated from UBC! I will miss Vancouver.</td>
+                        </tr>
+                        <tr>
+                            <td><b>April 2024:</b></td>
+                            <td>I will be at Barbados, as an invited guest for Bellairs Invitational Workshop on Contemporary, Foreseeable and Catastrophic Risks of
+                                Large Language Models.</td>
+                        </tr>
+                        <tr>
+                            <td><b>April 2024:</b></td>
+                            <td>I was awarded the <b>BPOC Graduate Excellence Award </b>at UBC!</td>
+                        </tr>
+                        <tr>
+                            <td><b>Feb 2024:</b></td>
+                            <td>I was invited as a guest speaker for course CPSC 532V at UBC. I gave a lecture on exploring Cross-Cultural Phenomena in NLP.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Jan 2024:</b></td>
+                            <td>Look mom and dad, I was LIVE on TV! I was interviewed by Global News and spoke about solving diversity issues in AI model. Check the live TV interview! Thanks to Vered and the UBC Media Team for this opportunity.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Jan 2024:</b></td>
+                            <td>UBC News released an article about my research!</td>
+                        </tr>
+                    </table>
+                </div>
+              
+              
+              
+              <p class="header pt-5">Selected Publications</p>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Value Drifts: Tracing Value Alignment During LLM Post-Training</span><br>
+                     <span class="thisauthor">Mehar Bhatia</span>, Shravan Nayak, Gaurav Kamath, Marius Mosbach, Karolina Stańczak, Vered Shwartz, Siva Reddy <br>
+                     <!-- <span class="noter"> (* = Equal Contribution)</span><br> -->
+                     <!-- <span class="conf"><a class="confshort" href="https://arxiv.org/abs/2510.26707">Under Review</a></span><br> -->
+                     <span class="conf">Under Review</span><br>
+                     <a class="tag" href="https://arxiv.org/pdf/2510.26707" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/abs/2510.26707" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://x.com/bhatia_mehar/status/1985710208778211532" target="_blank">tweet-1</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://x.com/sivareddyg/status/1985715581991936073" target="_blank">tweet-2</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://huggingface.co/datasets/McGill-NLP/value-drifts" target="_blank">data</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://github.com/McGill-NLP/value-drifts" target="_blank">code</a><span class="tagsep"></span>
+                     <!-- <a class="tag" href="cites/acl2020.bib" target="_blank">cite</a><span class="tagsep">|</span> -->
+                     <!-- <a class="tag" href="https://microsoft.github.io/linguisticdiversity/" target="_blank">website</a> -->
+                 </p>
+                 </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Societal Alignment Frameworks Can Improve LLM Alignment</span><br>
+                     Karolina Stańczak, Nicholas Meade, <span class="thisauthor">Mehar Bhatia</span>, Hattie Zhou, Konstantin Böttinger, Jeremy Barnes, Jason Stanley, Jessica Montgomery, Richard Zemel, Nicolas Papernot, Nicolas Chapados, Denis Therien, Timothy P. Lillicrap, Ana Marasović, Sylvie Delacroix, Gillian K. Hadfield, Siva Reddy
+                     
+                     <!-- <span class="noter"> (* = Equal Contribution)</span><br> -->
+                     <span class="conf"><a class="confshort" href="https://lrec2020.lrec-conf.org/">ICLR'25</a> | Bidirectional Human-AI Alignment Workshop at ICLR'25 </span><br>
+                    
+                     <a class="tag" href="https://arxiv.org/pdf/2004.10270.pdf" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/abs/2004.10270" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://x.com/karstanczak/status/1896953910616793440q" target="_blank">tweet</a><span class="tagsep"></span>
+                     <!-- <a class="tag" href="cites/lrec2020.bib" target="_blank">cite</a> -->
+                 </p>
+                 </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">Assessing Cultural Expectation Alignment in Text-to-Image Models and Evaluation Metrics</span><br>
+                     Shravan Nayak, <span class="thisauthor">Mehar Bhatia</span>, Xiaofeng Zhang, Verena Rieser, Lisa Anne Hendricks, Sjoerd van Steenkiste, Yash Goyal, Karolina Stanczak, Aishwarya Agrawal <br>
+                     <!-- Kalika Bali, Monojit Choudhury, Sunayana Sitaram, <span class="thisauthor">Sebastin Santy</span><br> -->
+                     <span class="conf"><a class="confshort" href="https://en.unesco.org/LT4All">EMNLP 2025 (Findings)</a> | The 2025 Conference on Empirical Methods in Natural Language Processing </span><br>
+                     <a class="tag" href="https://arxiv.org/pdf/2506.08835" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/abs/2506.08835" target="_blank">abstract</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://x.com/PShravannayak/status/1956019143972467016" target="_blank">tweet</a><span class="tagsep"></span>
+
+                    </p>   </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">From Local Concepts to Universals: Evaluating Multicultural Understanding of Vision-Language Models</span><br>
+                     <span class="thisauthor">Mehar Bhatia</span>, Sahithya Ravi, Aditya Chinchure, Eunjeong Hwang, Vered Shwartz<br>
+                     <span class="conf"><a class="confshort" href="https://aclanthology.org/2024.emnlp-main.385/">EMNLP'24 (Main)</a> | The 2024 Conference on Empirical Methods in Natural Language Processing</span><br>
+                     <a class="tag" href="https://arxiv.org/pdf/2407.00263" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/abs/2407.00263" target="_blank">abstract</a><span class="tagsep"></span>
+                     <!-- <a class="tag" href="cites/icon2019.bib" target="_blank">cite</a> -->
+                 </p>
+                 </div>
+                 <div class="py-2">
+                 <p class="paper my-2 pl-2">
+                     <span class="papertitle">GD-COMET: A Geo-Diverse Commonsense Inference Model</span><br>
+                     <span class="thisauthor">Mehar Bhatia</span>, Vered Shwartz<br>
+                     <span class="conf"><a class="confshort" href="https://aclanthology.org/2023.emnlp-main.496/">EMNLP'23 (Main)</a> | The 2023 Conference on Empirical Methods in Natural Language Processing</span><br>
+                     <a class="tag" href="https://arxiv.org/pdf/2310.15383" target="_blank">pdf</a><span class="tagsep">|</span>
+                     <a class="tag" href="https://arxiv.org/abs/2310.15383" target="_blank">abstract</a><span class="tagsep"></span>
+                     <!-- <a class="tag" href="cites/cossat.bib" target="_blank">cite</a><span class="tagsep">|</span> -->
+                     <!-- <a class="tag" href="assets/cossat.pdf" target="_blank">slides</a> -->
+                 </p>
+                </div>
+                 </div>
+
+
+                <div class="row text-center py-4">
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-2" src="images/mila.png">
+                        <div class="institution">Mila - Quebec AI Institute</div>
+                        <div class="years">2024-Present</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-2" src="images/mcgill.png">
+                        <div class="institution">McGill University</div>
+                        <div class="years">2024-Present</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-1" src="images/ubc.png">
+                        <div class="institution">University of British Columbia</div>
+                        <div class="years">2022-2024</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-2" src="images/vector.png">
+                        <div class="institution">Vector Institute</div>
+                        <div class="years">2022-2024</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-1" src="images/neuralspace.png">
+                        <div class="institution">NeuralSpace</div>
+                        <div class="years">2021-2022</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-2" src="images/iiitd.jpg">
+                        <div class="institution">IIIT Delhi</div>
+                        <div class="years">2020-2021</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-2" src="images/snu.png">
+                        <div class="institution">Shiv Nadar University</div>
+                        <div class="years">2016 - 2020</div>
+                    </div>
+                    <div class="mx-auto mt-2">
+                        <img class="img-fluid instilogo p-1" src="images/iiith.jpeg">
+                        <div class="institution">IIIT Hyderabad</div>
+                        <div class="years">S2017, S2018, S2019</div>
+                    </div>
+                </div>
+
             </div>
-          </li>
-          
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BTech. in Computer Science and Engineering, 2016-2020</p>
-              <p class="institution">Shiv Nadar University</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  <section id="news" class="home-section">
-    <div class="container">
-      
-
-
-<div class="row">
-  
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>News and Travel</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    <ul>
-
-
-      <li><strong>Sept 2024</strong>: My paper, From Local Concepts to Universals has been accepted to EMNLP'24. Excited to present and travel to Miami in November 2024.</li>
-      <li><strong>Sept 2024</strong>: Shifted to Montreal, starting my PhD at McGill University & MILA with Prof. Siva Reddy. </li>
-      <li><strong>Aug 2024</strong>: Completed my Masters Thesis Presentation at UBC. </li>
-      <li><strong>April 2024</strong>: Travelling to Barbados for the Bellairs Invitational Workshop on Contemporary, Foreseeable and Catastrophic Risks of Large Language Models. </li>
-      <li><strong>Feb 2024</strong>: I was LIVE news on Global News! Thanks Vered for the opportunity. </li>
-      <li><strong>Dec 2023</strong>: Virtually presented my paper GD-COMET at EMNLP'23 held in Singapore. </li>
-      <li><strong>July 2023</strong>: Attended DLRL Summer School in Montreal. </li>
-      <li><strong>July 2023</strong>: Travelling to Toronto for ACL'24. </li>
-      <li><strong>Sept 2022</strong>: Shifted to Vancouver and starting my Masters (Thesis) in Computer Science at UBC Vancouver. I will be working with Prof. Vered Shwartz. </li>
-</ul>
-
-  </div>
-  
-</div>
-
-    </div>
-  </section>
-  
-  
-    
-
-  
-  <section id="publications" class="home-section">
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Selected Publications</h1>
-    <h5>Complete List: <a href="https://scholar.google.com/citations?hl=en&user=F1efoLgAAAAJ">Google Scholar</a></h5>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/hasoc2021/" itemprop="url">From Local Concepts to Universals: Evaluating the Multicultural Understanding of Vision-Language Models</a>
-    </h3>
-    <h5> Accepted to EMNLP'24</h5> 
-
-    
-    
-      
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      Despite recent advancements in vision-language models, their performance remains suboptimal on images from non-western cultures due to underrepresentation in training datasets. Various benchmarks have been proposed to test models' cultural inclusivity, but they have limited coverage of cultures and do not adequately assess cultural diversity across universal as well as culture-specific local concepts. To address these limitations, we introduce the GlobalRG benchmark ...
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Mehar Bhatia</a></span></span>, Sahithya Ravi, Aditya Chinchure, Eunjeong Hwang, Vered Shwartz
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-    
-
-
-      </div>
-    </div>
-
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2407.00263" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="https://scholar.googleusercontent.com/scholar.bib?q=info:PiMsx4t3JqMJ:scholar.google.com/&output=citation&scisdr=ClGoG7YLEIvDupz3S6s:AFWwaeYAAAAAZyrxU6tmThcAbg5v50yZRdBJ-BI&scisig=AFWwaeYAAAAAZyrxU6VJ2I2rormtwtBfVxGpsLs&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1">
-  Cite
-</button>
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://globalrg.github.io/" target="_blank" rel="noopener">
-  Project Page & Dataset
-</a>
-
-
-
-
-    </div>
-
-  </div>
-
-</div>
-
-      
-    
-      
-        <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/publication/cods-comad/" itemprop="url">CulturalTeaming: AI-Assisted Interactive Red-Teaming for Challenging LLMs'(Lack of) Multicultural Knowledge</a>
-    </h3>
-    <h5> In Submission </h5> 
-
-    
-    
-      
-    
-    
-    <div class="article-style" itemprop="articleBody">
-      Frontier large language models (LLMs) are developed by researchers and practitioners with skewed cultural backgrounds and on datasets with skewed sources. However, LLMs' (lack of) multicultural knowledge cannot be effectively assessed with current methods for developing benchmarks. Existing multicultural evaluations primarily rely on expensive and restricted human annotations or potentially outdated internet resources. Thus, they struggle to capture the intricacy, dynamics, and diversity of cultural norms ...</div>
-    
-
-    <div class="stream-meta article-metadata">
-      <div itemprop="author">
-        
-
-
-  Yu Ying Chiu, Liwei Jiang, Maria Antoniak, Chan Young Park, Shuyue Stella Li, 
-  
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="">Mehar Bhatia</a></span></span>, Sahithya Ravi, Yulia Tsvetkov, Vered Shwartz, Yejin Choi
-
-      </div>
-    </div>
-
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-  
-    
-  
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2404.06664" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="https://scholar.googleusercontent.com/scholar.bib?q=info:h-w7JHolxqcJ:scholar.google.com/&output=citation&scisdr=CgWwsEJwEI-_gP8WVHg:AAGBfm0AAAAAYXUQTHglsTNuexeH2KofMgY-6xKHm3Ls&scisig=AAGBfm0AAAAAYXUQTHbAhpZ0AYm50jznYX5wE1JWdzVg&scisf=4&ct=citation&cd=-1&hl=en">
-  Cite
-</button>
-
-
-  
-  
-    
-  
-<!-- <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/midas-research/calling-out-bluff" target="_blank" rel="noopener"> -->
-  <!-- Code -->
-<!-- </a> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-  </div>
-
-  
-  
-</div>
-
-  <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-    <div class="media-body">
-  
-      <h3 class="article-title mb-0 mt-0" itemprop="name">
-        <a href="/publication/cods-comad/" itemprop="url">GD-COMET: A Geo-Diverse Commonsense Inference Model</a>
-      </h3>
-      <h5> Accepted to EMNLP'23</h5> 
-  
-      
-      
-        
-      
-      
-      <div class="article-style" itemprop="articleBody">
-        With the increasing integration of AI into everyday life, it's becoming crucial to design AI systems that serve users from diverse backgrounds by making them culturally aware. In this paper, we present GD-COMET, a geo-diverse version of the COMET commonsense inference model. GD-COMET goes beyond Western commonsense knowledge and is capable of generating inferences pertaining to a broad range of cultures. We demonstrate the effectiveness of GD-COMET ...
-      </div>
-      
-  
-      <div class="stream-meta article-metadata">
-        <div itemprop="author">
-          
-  
-  
-  
-    
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-        <span itemprop="name">
-          
-  
-        
-        
-        <a href="">Mehar Bhatia</a></span></span>, and Vered Shwartz
-
-  
-        </div>
-      </div>
-  
-      <div class="btn-links">
-        
-  
-  
-  
-  
-  
-  
-  
-    
-      
-    
-  
-  
-  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2310.15383" target="_blank" rel="noopener">
-    PDF
-  </a>
-  
-  
-  
-  <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-          data-filename="https://scholar.googleusercontent.com/scholar.bib?q=info:l6l5tSMne2EJ:scholar.google.com/&output=citation&scisdr=CgWwsEJwEI-_gPxsWBM:AAGBfm0AAAAAYXZqQBPKY83MIL5p8nLYZTnXkuKtlkrl&scisig=AAGBfm0AAAAAYXZqQLDDmFKabO2FcbHpqdhqKbeiTMjk&scisf=4&ct=citation&cd=-1&hl=en">
-    Cite
-  </button>
-  
-  
-    
-    
-      
-    
-  <!-- <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/Remorax/SIREN-Research/tree/master/OntologyEnrichment-Survey" target="_blank" rel="noopener"> -->
-    <!-- Code -->
-  <!-- </a> -->
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      </div>
-  
-    </div>
-  
-    
-    
-    
-       
-  
-      
-  
-    </div>
-</div>
-
-
-
-    </div>
-    
-
-    <div class="ml-3">
-    
-    
-    </div>
-   
-  </section>
-  
-
-  
-  
-  
-  <section id="posts" class="home-section">
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Blog</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-      <div class="media-body">
-    
-        <h3 class="article-title mb-0 mt-0" itemprop="name">
-          <a href="/post/language-tech" itemprop="url">2021: How far have we, together, come to provide equal language technology performance around the world?</a>
-        </h3>
-    
-        
-        
-          
-        
-        
-        <div class="article-style" itemprop="articleBody">
-          Natural Language Processing (NLP) applications are now ubiquitous and used by millions of individuals worldwide on a daily basis. Nevertheless, these applications can be overwhelmingly brittle and biased. For example, it has been seen that the accuracy of syntactic parsing models drops by at least 20 percent on African-American vernacular English when compared to textbook-like English (how it is commonly spoken by the more privileged class of Americans). Further, sentiment analyzers fail on language originating from different time periods, question-answering systems fail on British English, conversational assistants struggle to interact with millions of elderly people with speech disabilities, and hate speech detection systems are biased and more likely to classify language from specific demographics incorrectly as offensive. In short, NLP models and applications work well only for a minority of the population, effectively excluding a significant majority that uses such applications exactly as often. It is shocking to see that roughly 6500 languages are spoken in the world today, however, the advancement in NLP in academia and industry focuses on a minuscule subset...
-        </div>
-        
-    
-        <div class="stream-meta article-metadata">
-          <div itemprop="author">
             
-    
-    
-    
-      <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-          <span itemprop="name">
-            
-    
-          
-          
-          <!-- <a href="">Vivek Iyer</a></span></span>,  -->
-      <!-- <span itemscope itemprop="author" itemtype="http://schema.org/Person"> -->
-          <!-- <span itemprop="name"> -->
-            
-    
-          
-          
-          <!-- <a href="">Lalit Mohan</a></span></span>,  -->
-      <!-- <span itemscope itemprop="author" itemtype="http://schema.org/Person"> -->
-          <!-- <span itemprop="name"> -->
-            
-    
-          
-          
-          <!-- <a href="">Mehar Bhatia</a></span></span>,  -->
-      <!-- <span itemscope itemprop="author" itemtype="http://schema.org/Person"> -->
-          <!-- <span itemprop="name"> -->
-            
-    
-          
-          
-          <!-- <a href="">Changyou Chen</a></span></span>, 
-      <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-          <span itemprop="name"> -->
-    
-          <!-- <a href="">Di Jin</a></span></span>, 
-      <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-          <span itemprop="name"> -->
-            
-    
-          
-          
-          <!-- <a href="">Di Jin</a></span></span> -->
-          <!-- <a href="">Y. Raghu Reddy</a></span></span> -->
-      
-    
-    
-    
-          </div>
         </div>
-    
-        <div class="btn-links">
-          
-    
-    
-    
-    
-    
-    
-    
-      
-        
-      
-    
-    
-    <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://medium.com/neuralspace/2021-how-far-have-we-together-come-to-provide-equal-language-technology-performance-around-the-cc6089b87ee" target="_blank" rel="noopener">
-      Link to Blog on Medium! 
-    </a>
-    
-    
-    
-    <!-- <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" -->
-            <!-- data-filename="https://scholar.googleusercontent.com/scholar.bib?q=info:l6l5tSMne2EJ:scholar.google.com/&output=citation&scisdr=CgWwsEJwEI-_gPxsWBM:AAGBfm0AAAAAYXZqQBPKY83MIL5p8nLYZTnXkuKtlkrl&scisig=AAGBfm0AAAAAYXZqQLDDmFKabO2FcbHpqdhqKbeiTMjk&scisf=4&ct=citation&cd=-1&hl=en"> -->
-      <!-- Cite -->
-    <!-- </button> -->
-    
-    
-      
-      
-        
-      
-    <!-- <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/Remorax/SIREN-Research/tree/master/OntologyEnrichment-Survey" target="_blank" rel="noopener"> -->
-      <!-- Code -->
-    <!-- </a> -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        </div>
-    
-      </div>
-    
-      
-      
-      
-         
-    
-        
-    
-      </div>  
-
-    
-
-    
-
-  </div>
-</div>
-
     </div>
-  </section>
-  
 
-  
-  
-  
-  <section id="contact" class="home-section">
-    <div class="container">
-      
-
-
-
-
-<div class="row contact-widget">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Contact</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-
-    
-    
-      
-      
-    
-
-    <div class="mb-3">
-      <form name="contact" method="POST" action="https://formspree.io/mehar.bhatia@mila.quebec">
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputName">Name</label>
-          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
-        </div>
-        <div class="form-group form-inline">
-          <label class="sr-only" for="inputEmail">Email</label>
-          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label class="sr-only" for="inputMessage">Message</label>
-          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
-      </form>
-    </div>
-    
-
-    <ul class="fa-ul" itemscope>
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <i class="fa-li fab fa-twitter fa-2x" aria-hidden="true"></i>
-        <a href="https://twitter.com/bhatia_mehar" target="_blank" rel="noopener">Twitter</a>
-      </li>
-      <li>
-        <i class="fa-li fab fa-linkedin-in fa-2x" aria-hidden="true"></i>
-        <a href="https://www.linkedin.com/in/meharbhatia23/" target="_blank" rel="noopener">Linkedin</a>
-      </li>
-      
-
-    </ul>
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-
-
-<div class="container">
-  <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    &copy; Mehar Bhatia &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-</div>
-
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-        
-      
-
-      
-      
-    
-
-    
-    
-
-    
-    
-    
-    <script id="dsq-count-scr" src="//bweehee.disqus.com/count.js" async></script>
-    
-
-    
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-    <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "results found",
-        'no_results': "No results found"
-      };
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S30BJ5PL3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-5S30BJ5PL3');
-    </script>
-    
-    
-    
-      
-    
-    
-    
-    
-    <script src="/js/academic.min.07fbebbbf71b021c8836e1d7ecffa489.js"></script>
-
-  </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/style-3.js"></script>
+</body>
+  <style>
+  </style>
 </html>
-
-
