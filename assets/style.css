@@ -4,18 +4,6 @@
    ========================================================================== */
 
 :root,
-[data-theme="dark"] {
-    --bg: #16131c;
-    --surface: #211c2b;
-    --text: #b3aac2;
-    --highlight: #f1ecf7;
-    --accent: #c2a5f0;
-    --accent-hover: #dcc9ff;
-    --border: #352d44;
-    --logo-chip: #efe9f7;
-    --scrollbar-thumb: #443b55;
-}
-
 [data-theme="light"] {
     --bg: #faf8fc;
     --surface: #ffffff;
@@ -26,6 +14,18 @@
     --border: #e2dced;
     --logo-chip: transparent;
     --scrollbar-thumb: #cdc4da;
+}
+
+[data-theme="dark"] {
+    --bg: #16131c;
+    --surface: #211c2b;
+    --text: #b3aac2;
+    --highlight: #f1ecf7;
+    --accent: #c2a5f0;
+    --accent-hover: #dcc9ff;
+    --border: #352d44;
+    --logo-chip: #efe9f7;
+    --scrollbar-thumb: #443b55;
 }
 
 html,
@@ -85,6 +85,19 @@ a:hover {
 
 .menulink:hover svg {
     opacity: 1;
+}
+
+.about {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* the structured blocks read better ragged-right */
+.about table,
+.paper,
+.about .header {
+    text-align: left;
+    hyphens: manual;
 }
 
 .about b,

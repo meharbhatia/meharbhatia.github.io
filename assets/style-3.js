@@ -3,7 +3,7 @@ const fontname = "Roboto+Mono";
 const fontweights = [300, 400, 500]
 
 // Color properties now live in assets/style.css as CSS variables, so that the
-// light/dark toggle can swap them. See :root / [data-theme="light"] there.
+// light/dark toggle can swap them. See :root / [data-theme="dark"] there.
 
 // Body properties
 const bodyfontweight = 300;
@@ -81,7 +81,7 @@ $(".years").css("font-size", instyearsize);
         btn.setAttribute("title", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
     }
 
-    apply(root.getAttribute("data-theme") === "light" ? "light" : "dark");
+    apply(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
 
     btn.addEventListener("click", function () {
         apply(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
