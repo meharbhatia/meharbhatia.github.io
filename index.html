@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="PhD Student, McGill University and Mila">
     <meta name="author" content="Mehar Bhatia">
-    <meta name="theme-color" content="#222222">
+    <meta name="theme-color" content="#16131c">
+
+    <!-- Set the theme before first paint so the page never flashes the wrong background -->
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('theme'); } catch (e) { }
+        document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+      })();
+    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/MeharBhatia_Photo.jpeg">
     <link rel="icon" type="image/png" sizes="32x32" href="images/MeharBhatia_Photo.jpeg">
@@ -31,6 +40,16 @@
     
   </head>
   <body>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.2"></circle>
+        <path d="M12 2.4v2.2M12 19.4v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.4 12h2.2M19.4 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"></path>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5a8.5 8.5 0 1 0 10.8 10.8z"></path>
+      </svg>
+    </button>
+
     <!-- <h1>Hello, world!</h1> -->
     <div class="container pt-5 allstuffp">
         <div class="row pt-5 allstuff">
@@ -45,12 +64,12 @@
                 }
                 </style>
                 <img src="images/MeharBhatia_Photo.jpeg" class="profilepic pt-4 pb-4">
-                <div class="pt-5 menur"><a class="menulink" target="_blank" href="assets/MeharBhatia_CV.pdf">curriculum vitae</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=F1efoLgAAAAJ">google scholar</a></div>
-                <div class=""><a class="menulink" target="_blank" href="mailto:meharmailbox@gmail.com">email address</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://x.com/bhatia_mehar">twitter</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://github.com/meharbhatia">github profile</a></div>
-                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/meharbhatia23/">linkedin</a></div>
+                <div class="pt-5 menur"><a class="menulink" target="_blank" href="mailto:mehar.bhatia@mila.quebec"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="m3.2 6.6 8.8 5.9 8.8-5.9"></path></svg><span>email address</span></a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=F1efoLgAAAAJ"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"></path></svg><span>google scholar</span></a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://x.com/bhatia_mehar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zM17.61 20.644h2.039L6.486 3.24H4.298z"></path></svg><span>twitter</span></a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://github.com/meharbhatia"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><span>github profile</span></a></div>
+                <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/meharbhatia23/"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg><span>linkedin</span></a></div>
+                <div class=""><a class="menulink" target="_blank" href="assets/MeharBhatia_Resume.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2.6H7a2 2 0 0 0-2 2v14.8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7.6z"></path><path d="M13.9 2.6v5.1h5.1"></path><path d="M8.8 13.2h6.4M8.8 16.6h4.3"></path></svg><span>curriculum vitae</span></a></div>
                 
                 
 
@@ -62,16 +81,17 @@
 
             <div class="col-md-8 pt-5 about">
 
-              I am a second-year PhD Candidate at McGill University, School of Computer Science and Mila - Quebec AI Institute, advised by <a class="in-text"
+              I am a second-year PhD Candidate at <b>McGill University</b>, School of Computer Science and <b>Mila - Quebec AI Institute</b>, advised by <a class="in-text"
               href="https://sivareddy.in/" target="_blank">Siva Reddy</a> and <a class="in-text" href="https://www.cs.ubc.ca/~vshwartz/index.html" target="_blank">Vered Shwartz.</a> <br> <br>
 
-              My research is centered around <b>robust and adaptive alignment</b> of agentic systems to <b>represent diverse users.</b>. 
-              I study how models continually learn from real-world user interactions where feedback is contextual, evolving, and often implicit and broadly how training algorithms influence model behavior, safety, privacy and reliability. <br><br>
-              
-              I earned my Masters degree in Computer Science from University of British Columbia, supervised by <a href="https://www.cs.ubc.ca/~vshwartz/" target="_blank">Vered Shwartz.</a> I worked on exploring the cultural competence of language and multimodal models. Prior to starting my graduate studies, I spent a year at <a href="https://neuralspace.ai" target="_blank">NeuralSpace </a> as an Applied Research Scientist.
+              My research is centered around <b>shaping and sustaining aligned model behaviour</b>: <b><u>robustly</u></b> through character training, and <b><u>adaptively</u></b> through continual alignment. 
+              I study the values and personas models acquire during training, how these generalize, and how models can efficiently adapt to evolving users and environments while managing memory and preserving stability and privacy. 
+              I translate observed bottlenecks into evals, data, reward signals for model improvement.<br><br>
+
+              I earned my <b>Masters degree in Computer Science from University of British Columbia</b>, supervised by <a href="https://www.cs.ubc.ca/~vshwartz/" target="_blank">Vered Shwartz.</a> I worked on exploring the cultural competence of language and multimodal models. Prior to starting my graduate studies, I spent a year at <a href="https://neuralspace.ai" target="_blank">NeuralSpace </a> as an Applied Research Scientist.
               I have also been a part of various academic labs, SUTD, IIIT Delhi, Language Technologies Lab and Software Engineering Lab at IIIT Hyderabad. In 2020, I graduated with a Bachelors in Computer Science and a Minor in Mathematics from <a href="https://snu.edu.in/home" target="_blank">Shiv Nadar University, India</a>.<br><br>
     
-              If you are reading this, I would love to talk to you! I am always looking for opportunities to collaborate. My DMs are open if you have any questions about grad-life at MILA/McGill/UBC or Canada in general. Message me on X or send me an email.
+              If you are reading this, I would love to talk to you! I am always looking for opportunities to collaborate. My DMs are open if you have any questions about grad-life at MILA/McGill/UBC or Canada 🇨🇦 in general. Message me on X or send me an email.
                  
               <p class="header pt-5">Updates</p>
                 <div style="height:250px;overflow:auto;">

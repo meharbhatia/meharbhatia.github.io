@@ -1,6 +1,46 @@
-.instilogo {
-    height: 50px;
-    filter: grayscale(20%);
+/* ==========================================================================
+   Theme palettes. Colors live here so the light/dark toggle can swap them;
+   fonts, sizes and weights are still set in style-3.js.
+   ========================================================================== */
+
+:root,
+[data-theme="dark"] {
+    --bg: #16131c;
+    --surface: #211c2b;
+    --text: #b3aac2;
+    --highlight: #f1ecf7;
+    --accent: #c2a5f0;
+    --accent-hover: #dcc9ff;
+    --border: #352d44;
+    --logo-chip: #efe9f7;
+    --scrollbar-thumb: #443b55;
+}
+
+[data-theme="light"] {
+    --bg: #faf8fc;
+    --surface: #ffffff;
+    --text: #5a5566;
+    --highlight: #1c1823;
+    --accent: #6d43b8;
+    --accent-hover: #4e2e8a;
+    --border: #e2dced;
+    --logo-chip: transparent;
+    --scrollbar-thumb: #cdc4da;
+}
+
+html,
+body {
+    background-color: var(--bg);
+    scrollbar-color: var(--scrollbar-thumb) var(--bg);
+}
+
+body {
+    color: var(--text);
+    transition: background-color .3s ease, color .3s ease;
+}
+
+a {
+    color: var(--accent);
 }
 
 a:hover {
@@ -8,9 +48,101 @@ a:hover {
     text-decoration: none;
     transition-duration: 0.3s;
     transition-timing-function: linear;
-    /* color: #444; */
+    color: var(--accent-hover);
 }
 
+.name,
+.thisauthor,
+.institution,
+.papertitle {
+    color: var(--highlight);
+}
+
+.header,
+.years {
+    color: var(--accent);
+}
+
+.menulink {
+    color: var(--text);
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.menulink:hover {
+    color: var(--accent-hover);
+}
+
+.menulink svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--accent);
+    opacity: .85;
+    transition: opacity .2s ease;
+}
+
+.menulink:hover svg {
+    opacity: 1;
+}
+
+.about b,
+.about u {
+    color: var(--highlight);
+}
+
+/* ---------- Theme toggle ---------- */
+
+.theme-toggle {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 100;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 9px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color .2s ease, border-color .2s ease, background-color .3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.theme-toggle svg {
+    width: 17px;
+    height: 17px;
+}
+
+.theme-toggle .icon-moon {
+    display: none;
+}
+
+[data-theme="light"] .theme-toggle .icon-moon {
+    display: block;
+}
+
+[data-theme="light"] .theme-toggle .icon-sun {
+    display: none;
+}
+
+/* ---------- Layout ---------- */
+
+.instilogo {
+    height: 50px;
+    filter: grayscale(20%);
+    background: var(--logo-chip);
+    border-radius: 8px;
+}
 
 .noter {
     font-size: 9pt;
@@ -34,11 +166,7 @@ a:hover {
 }
 
 .paper {
-    border-left: 1px solid #ddd;
-}
-
-.menulink:hover {
-    color: #111;
+    border-left: 1px solid var(--border);
 }
 
 .profilepic {
@@ -77,9 +205,11 @@ a:hover {
         padding-top: 18px !important;
     }
 
-}
+    .theme-toggle {
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+    }
 
-/* .thisauthor {
-          color: #111;
-          text-decoration: underline;
-    } */
+}

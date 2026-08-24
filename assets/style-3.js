@@ -1,114 +1,89 @@
 // Initialize font properties
 const fontname = "Roboto+Mono";
-const fontweights = [300, 400]
+const fontweights = [300, 400, 500]
 
-// Color properties
-const basecolor = "#777";
-const accentcolor = "#007";
-const highlightcolor = "#111";
-
-// const basecolor = "#888";
-// const accentcolor = "#222";
-// const highlight = "#111";
+// Color properties now live in assets/style.css as CSS variables, so that the
+// light/dark toggle can swap them. See :root / [data-theme="light"] there.
 
 // Body properties
 const bodyfontweight = 300;
 const bodyfontsize = "12pt";
-const backgroundcolor = "#FFFAF0";
 
 // Link properties
-const acolor = accentcolor;
 const adecoration = "underline dotted";
-// const ahovercolor = accentcolor;
-// const ahoverduration = "0.3s";
-// const ahoverdecoration = "none"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
 
 // Menu properties
-const menucolor = basecolor;
 const menufontsize = "15pt";
 const menudecoration = "none";
-// const menuhover = accentcolor;
-// const menuhoverduration = "0.3s";
-// const menuhoverdecoration = "none"; //none, underline, overline, dotted, color (https://www.w3schools.com/cssref/pr_text_text-decoration.asp)
 
 // Header properties
-const headercolor = accentcolor;
 const headerfontsize = "18pt";
 const headerdecoration = "none";
-const namecolor = highlightcolor;
 const namefontsize = "23pt";
 
 
 // Publication properties
-const ptitlecolor = accentcolor;
 const ptitlefontsize = bodyfontsize;
-const ptitleweight = bodyfontweight;
+const ptitleweight = 500;
 const ptitledecoration = "none";
 const ptitlestyle = "normal";
 
-const authorcolor = accentcolor;
-const authorweight = bodyfontweight;
-const authordecoration = "none";
-const authorstyle = "normal";
-
-const selfcolor = highlightcolor;
 const selfweight = bodyfontweight;
 const selfdecoration = "none";
 const selfstyle = "normal";
 
-const tagcolor = accentcolor;
-const tagweight = bodyfontweight;
-const tagdecoration = "none";
-const tagstyle = "normal";
-
-const insttitlecolor = highlightcolor;
 const insttitlesize = "12px";
-const instyearcolor = accentcolor;
 const instyearsize = "11px";
-
-//     .institution {
-//             font - size: 12px;
-//             color: #222;
-//         }
-//   .years {
-//             font - size: 11px;
-//             color: #888;
-//         }
 
 // Works for sans serif, change otherwise
 $("head").append("<link href='https://fonts.googleapis.com/css2?family=" + fontname + ":wght@" + fontweights.join(';') + "&display=swap' rel='stylesheet' type='text/css'>");
 $("body").css("font-family", fontname);
 
-$("body").css("color", basecolor);
 $("body").css("font-weight", bodyfontweight);
 $("body").css("font-size", bodyfontsize);
-$("body").css("background-color", backgroundcolor);
 
-$("a").css("color", acolor);
 $("a").css("text-decoration", adecoration);
 
-$(".menulink").css("color", menucolor);
 $(".menulink").css("font-size", menufontsize);
 $(".menulink").css("text-decoration", menudecoration);
 
-$(".header").css("color", headercolor);
 $(".header").css("font-size", headerfontsize);
 $(".header").css("text-decoration", headerdecoration);
-$(".name").css("color", namecolor);
 $(".name").css("font-size", namefontsize);
 
-$(".papertitle").css("color", ptitlecolor);
 $(".papertitle").css("font-size", ptitlefontsize);
 $(".papertitle").css("font-weight", ptitleweight);
 $(".papertitle").css("text-decoration", ptitledecoration);
 $(".papertitle").css("font-style", ptitlestyle);
 
-$(".thisauthor").css("color", selfcolor);
 $(".thisauthor").css("font-weight", selfweight);
 $(".thisauthor").css("text-decoration", selfdecoration);
 $(".thisauthor").css("font-style", selfstyle);
 
-$(".institution").css("color", insttitlecolor);
 $(".institution").css("font-size", insttitlesize);
-$(".years").css("color", instyearcolor);
 $(".years").css("font-size", instyearsize);
+
+// Light/dark toggle. The initial theme is set by an inline script in the
+// <head> of index.html so the page never flashes the wrong background.
+(function () {
+    const root = document.documentElement;
+    const btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+
+    const meta = document.querySelector('meta[name="theme-color"]');
+    const bgcolor = { dark: "#16131c", light: "#faf8fc" };
+
+    function apply(theme) {
+        root.setAttribute("data-theme", theme);
+        try { localStorage.setItem("theme", theme); } catch (e) { }
+        if (meta) meta.setAttribute("content", bgcolor[theme]);
+        btn.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+        btn.setAttribute("title", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+    }
+
+    apply(root.getAttribute("data-theme") === "light" ? "light" : "dark");
+
+    btn.addEventListener("click", function () {
+        apply(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+    });
+})();
